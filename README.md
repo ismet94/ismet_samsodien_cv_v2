@@ -1,5 +1,5 @@
 # ismet_samsodien_cv_v2
-##Online CV Version 2.0
+Online CV Version 2.0
 
 A substantial amount of researching used; books and going as far as using the github articles getting to know every function of constructing a powerful yet elegant one pager website.
 I came up with a solution to use a one pager website rather than using multiple pages. In this project my code included sass which implemented each aspect of each scss file. My ojective for doing this was so that I could in-corporate the new age code with javascripting to make the page come alive.
