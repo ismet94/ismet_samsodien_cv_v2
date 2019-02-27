@@ -1,0 +1,308 @@
+/*************************
+      Layouts
+*************************/
+
+/* This ensures that the background position and size fits all resolutions **Add multimedia sizes** */
+.main-bg {
+    background-image: url(../images/main.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* This ensures that the secondary background position and size fits all resolutions **Add multimedia sizes** */
+  .secondary-bg {
+    background: url(../images/roots.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* this ensures that the headings for each section is coloured and positioned properly */
+  .headers {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* the text transformation was used to uppercase all letters so that it stands out */
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-top: 80px;
+    scroll-behavior: smooth;
+  }
+  
+  /* This displays my name and surname and jusitifies the positioning of the text */
+  .center {
+    /* Ensures that the text is centered evenly */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Colour and size determined */
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 4px 5px black;
+    animation-name: direction;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes direction {
+    from {font-size: 5px;}
+    to {font-size: 30px;}
+  }
+  
+  /* this adds styling to the download button so that it fits the theme */
+  .download-btn {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+    display: block;
+    /* border styling selected */
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    /* postioning determined */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  
+  .down-size {
+    height: 10%;
+    width: 10%;
+  }
+  
+  /* this funtion helps the scroll down is set in its right position */
+  .down {
+    /* colour and display selected */
+    display: block;
+    /* text align and spacing */
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  /* this class grids my first section into two seperate columns */
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  /* this centers all images in the projects section */
+  #project-center {
+    text-align: center;
+  }
+  
+  /* this class links to my social media icons in the home section it only justifies the height and width for each */
+  .icons {
+    width: 20%;
+    height: 20%;
+  }
+  
+  /* this determines the height and width of the skills section images */
+  .skills {
+    height: 20%;
+    width: 20%;
+    -webkit-filter: brightness(90%);
+  }
+  
+  /* this centers all images in the skills section */
+  #skills-center {
+    text-align: center;
+  }
+  
+  
+  .top {
+    /* colour and display selected */
+    color: blue;
+    display: block;
+    /* text align and spacing */
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  .up-size {
+    height: 6%;
+    width: 6%;
+    transform: rotate(180deg);
+  }
+  
+  
+  /*************************
+        Media Queries
+  *************************/
+  
+  /******* Mobile Device  *******/
+  /* Responsive design for a mobile device */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  /* This ensures that the background position and size fits all resolutions **Add multimedia sizes** */
+  .main-bg {
+    background-image: url(../images/main.jpg);
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* This ensures that the secondary background position and size fits all resolutions **Add multimedia sizes** */
+  .secondary-bg {
+    background: url(../images/roots.jpg);
+    background-size: contain;
+  }
+  
+  /* this class is linked to the secondary background so that the full image can be displayed */
+  .main {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* this styles the navigation bar with the text colour, alignment and position */
+  nav {
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+    position: fixed;
+    height: 50px;
+    top: 10px;
+    right: 1px;
+    left: 1px;
+    border-radius: 10px;
+  }
+  
+  ul {
+    margin-top: 2px;
+  }
+  
+  /* this ensures that each li tag is spaced out evenly and consistant */
+  li {
+    display: inline;
+    margin: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  /* below is the link colour, decoration and font size */
+  a:link {
+    color: white;
+    font-size: 10px;
+    /* The decoration is added so that the lines disappears under the text */
+    text-decoration-style: none;
+    text-decoration-line: none; 
+    text-decoration: none;
+  }
+  
+  /* below is the visited colour and font size */
+  a:visited {
+    color: rgb(109, 0, 182);
+    font-size: 10px;
+  }
+  
+  /* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
+  a:hover {
+    color: rgb(180, 180, 180);
+    font-size: 10px;
+  }
+  
+  /* below is the active colour, decoration and font size */
+  a:active {
+    color: purple;
+    font-size: 3px;
+  }
+  
+  
+  /* This displays my name and surname and jusitifies the positioning of the text */
+  .center {
+    /* Ensures that the text is centered evenly */
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 45%;
+    transform: translate(-40%, -40%);
+    /* Colour and size determined */
+    color: white;
+    font-size: 15px;
+    animation-name: direction;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes direction {
+    from {font-size: 3px;}
+    to {font-size: 15px;}
+  }
+  
+  /* when hovering over the button the colour ant text would change */
+  button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .down-size {
+    height: 20%;
+    width: 20%;
+  }
+  
+  /* this ensures that the headings for each section is coloured and positioned properly */
+  .headers {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* the text transformation was used to uppercase all letters so that it stands out */
+    font-size: 30px;
+    padding-top: 60px;
+  }
+  
+  /* the section is used so that each heading can be split from each other */
+  section {
+    padding: 10px;
+    /* proper positioning is used here by adjusting the margins */
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+  }
+  
+  /* this class grids my first section into two seperate columns */
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(1,0fr);
+  }
+  
+  /* this class links to the profile picture used in the home section */
+  .profile {
+    display: block;
+    grid-template-columns: repeat(0,0fr);
+    /* height and width determined */
+    height: 300px;
+    width: 250px;
+    margin-left: 20px;
+    /* this rounded the edges slightly*/
+    border-radius: 20px;
+  }
+  
+  /* this class links to my social media icons in the home section it only justifies the height and width for each */
+  .icons {
+    width: 20%;
+    height: 20%;
+  }
+  
+  /* the table property changes the font size to a more readible content for a mobile device */
+  table {
+    font-size: 12px;
+  }
+  
+  /* this centers all images in the projects section */
+  #project-center {
+    text-align: center;
+  }
+  
+  /* this ensures that the project images are sized correctly */
+  .media-size {
+    height: 75%;
+    width: 75%;
+  }
+  
+  .up-size {
+    height: 10%;
+    width: 10%;
+  
+  }
+  }

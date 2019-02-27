@@ -1,131 +1,4 @@
 /*************************
-        Components
-  *************************/
-/* this class is linked to the secondary background so that the full image can be displayed */
-.main {
-  height: 100%; }
-
-/* this class links to the profile picture used in the home section */
-.profile {
-  display: grid;
-  grid-template-columns: repeat(1, 2fr);
-  /* height and width determined */
-  height: 350px;
-  width: 300px;
-  margin-left: 100px;
-  /* this rounded the edges slightly*/
-  border-radius: 20px;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.295);
-  /* brightness dimmed to 90% */
-  -webkit-filter: brightness(90%); }
-
-/* dimmed the project link images to 90% */
-.media-size {
-  -webkit-filter: brightness(90%); }
-
-/*************************
-      Base
-*************************/
-/* The html and body holds all the text formatting, margin postions, */
-html, body {
-  height: 100%;
-  background-color: #030303;
-  /* This verifies that my website reads my selected font from Google fonts*/
-  font-family: 'Noto Sans', sans-serif;
-  /* smooth scrolling funtion added to give a much flush feel to the website */
-  scroll-behavior: smooth;
-  transition: 1s; }
-
-/* this styles the navigation bar with the text colour, alignment and position */
-nav {
-  background-color: rgba(0, 0, 0, 0.39);
-  text-align: center;
-  font-family: 'Lalezar', cursive;
-  color: white;
-  position: fixed;
-  height: 60px;
-  top: 20px;
-  right: 60px;
-  left: 0px; }
-
-ul {
-  padding-left: 0px; }
-
-/* this ensures that each li tag is spaced out evenly and consistant */
-li {
-  display: inline;
-  margin: 30px;
-  font-size: 20px;
-  text-align: center; }
-
-/* the section is used so that each heading can be split from each other */
-section {
-  padding: 30px;
-  /* a linear-gradient effect was used to give a sleek look */
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.425), rgba(252, 252, 252, 0));
-  /* proper positioning is used here by adjusting the margins */
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 30px;
-  /* this rounded the edges slightly*/
-  border-radius: 20px; }
-
-/* below is the link colour, decoration and font size */
-a:link {
-  color: white;
-  font-size: 25px;
-  /* The decoration is added so that the lines disappears under the text */
-  text-decoration-style: none;
-  text-decoration-line: none;
-  text-decoration: none; }
-
-/* below is the visited colour and font size */
-a:visited {
-  color: #6d00b6;
-  font-size: 30px; }
-
-/* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
-a:hover {
-  color: #b4b4b4;
-  font-size: 30px;
-  /* the timing and delay is added to smoothen it out */
-  transition-duration: 0.3s;
-  transition-delay: 0.3;
-  /* here a specific sequel is added */
-  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  text-decoration-style: none;
-  text-decoration-line: none;
-  text-decoration: none; }
-
-/* below is the active colour, decoration and font size */
-a:active {
-  color: purple;
-  font-size: 3px;
-  /* The decoration is added so that the lines disappears under the text */
-  text-decoration-style: none;
-  text-decoration-line: none;
-  text-decoration: none; }
-
-button:hover {
-  background-color: white;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer; }
-
-/* once hovered, the image brighness would increase to 110% */
-.profile:hover {
-  -webkit-filter: brightness(110%); }
-
-/* once hovered, the project images brightens*/
-.media-size:hover {
-  -webkit-filter: brightness(110%); }
-
-/* once hovered, the image brightens */
-.skills:hover {
-  -webkit-filter: brightness(110%); }
-
-/*************************
       Layouts
 *************************/
 /* This ensures that the background position and size fits all resolutions **Add multimedia sizes** */
@@ -386,6 +259,108 @@ button:hover {
   .up-size {
     height: 10%;
     width: 10%; } }
+/*************************
+      Base
+*************************/
+/* The html and body holds all the text formatting, margin postions, */
+html, body {
+  height: 100%;
+  background-color: #030303;
+  /* This verifies that my website reads my selected font from Google fonts*/
+  font-family: 'Noto Sans', sans-serif;
+  /* smooth scrolling funtion added to give a much flush feel to the website */
+  scroll-behavior: smooth;
+  transition: 1s; }
+
+/* this styles the navigation bar with the text colour, alignment and position */
+nav {
+  background-color: rgba(0, 0, 0, 0.39);
+  text-align: center;
+  font-family: 'Lalezar', cursive;
+  color: white;
+  position: fixed;
+  height: 60px;
+  top: 20px;
+  right: 60px;
+  left: 0px; }
+
+ul {
+  padding-left: 0px; }
+
+/* this ensures that each li tag is spaced out evenly and consistant */
+li {
+  display: inline;
+  margin: 30px;
+  font-size: 20px;
+  text-align: center; }
+
+/* the section is used so that each heading can be split from each other */
+section {
+  padding: 30px;
+  /* a linear-gradient effect was used to give a sleek look */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.425), rgba(252, 252, 252, 0));
+  /* proper positioning is used here by adjusting the margins */
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  /* this rounded the edges slightly*/
+  border-radius: 20px; }
+
+/* below is the link colour, decoration and font size */
+a:link {
+  color: white;
+  font-size: 25px;
+  /* The decoration is added so that the lines disappears under the text */
+  text-decoration-style: none;
+  text-decoration-line: none;
+  text-decoration: none; }
+
+/* below is the visited colour and font size */
+a:visited {
+  color: #6d00b6;
+  font-size: 30px; }
+
+/* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
+a:hover {
+  color: #b4b4b4;
+  font-size: 30px;
+  /* the timing and delay is added to smoothen it out */
+  transition-duration: 0.3s;
+  transition-delay: 0.3;
+  /* here a specific sequel is added */
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  text-decoration-style: none;
+  text-decoration-line: none;
+  text-decoration: none; }
+
+/* below is the active colour, decoration and font size */
+a:active {
+  color: purple;
+  font-size: 3px;
+  /* The decoration is added so that the lines disappears under the text */
+  text-decoration-style: none;
+  text-decoration-line: none;
+  text-decoration: none; }
+
+button:hover {
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* once hovered, the image brighness would increase to 110% */
+.profile:hover {
+  -webkit-filter: brightness(110%); }
+
+/* once hovered, the project images brightens*/
+.media-size:hover {
+  -webkit-filter: brightness(110%); }
+
+/* once hovered, the image brightens */
+.skills:hover {
+  -webkit-filter: brightness(110%); }
+
 /*************************
       Media Queries
 *************************/
@@ -682,4 +657,4 @@ button:hover {
     height: 70%;
     width: 70%; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

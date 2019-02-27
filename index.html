@@ -1,39 +1,379 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ismet Samsodien CV Version 2</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Appropriate title selected -->
+    <title>Ismet Samsodien CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linked css style sheet for my styling and positioning -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Selected fonts for my page selected from google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lalezar|Noto+Sans" rel="stylesheet">
+    <!-- This links the icon for the hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<!-- this also holds an id for an anchor point -->
+</head  id="top">
 
-</head>
-<body >  
-    <!-- header tag opened for the navigation bar -->
-    <header class="wallpaper"> 
-        <nav>
-            <!--unordered list selected for the li tag-->
-            <ul>
-                <!-- li tags opened with selected titlthis includes anchor points to thedestinations -->
-                <li><a href="#home-jump">Home</a></li>    
-                <li>href="#education-jump">Education</a></li>
-                <li><a href="#work-jump">WorkiExperience</a></li>
-                <li>href="#project-jump">Projects</a></li>
-                <li><a href="#skills-jump">Skills</a></li>
-            </ul>
-        </nav>
-        <div >
-            <div>
-                <h1 class="main-heading">Ismet SamsodiCV</h1>
-                <h1 class="main-title">Junior WDeveloper</h1>
-            </div>
-        </div>           
-    </header>
+<body>
+    <!-- Main background selected for the first section this ensures that only the first section contains this image -->
+    <div class="main-bg">
+        <!-- header tag opened for the navigation bar -->
+        <header> 
+            <nav>
+                 <!--unordered list selected for the li tags  -->
+                <ul>
+                    <!-- li tags opened with selected titles this includes anchor points to their destinations -->
+                    <li><a href="">Ismet Samsodien</a></li>
+                    <li><a href="#home-jump">Home</a></li>    
+                    <li><a href="#education-jump">Education</a></li>
+                    <li><a href="#work-jump">Working Experience</a></li>
+                    <li><a href="#project-jump">Projects</a></li>
+                    <li><a href="#skills-jump">Skills</a></li>
+                </ul>
+            </nav>
+        </header>
     <!-- closed the div tag for the first section -->
-          
+    </div>
+
+    <!-- div property selected so that each divider has a section to it -->
+    <div>
+        <!-- div tag opened with a class for the main heading -->
+        <div  class="center">
+            <h1>CV of Ismet Samsodien</h1>
+            <!-- a button was used to download the resume to your destination -->
+            <div>
+                <a href="files/Ismet Samsodien.pdf"> <button class="download-btn">Download Resume</button></a>     
+            </div>
+            <br>
+            <div>
+                <a href="#home-jump" class="down"><img src="images/down.gif" alt="" class="down-size"> </a> 
+            </div>
+        </div>
+    </div>
+    
+    <!-- This ensure that all the content below covers over the secondary background -->
+    <div class="secondary-bg" class="main"> 
+
+        <!-- Second section opened for Cv information -->
+        <div>
+            <!-- A consistency of the h1 tags used for the headings this includes a class with more css styling and positioning. I used an id here to complete the anchor points. -->
+            <h1 class="headers" id="home-jump">home</h1>
+            <!-- First heading opened with the grid property to split the image from the content -->
+            <section  class="grid1">
+                <!-- table property was used to align all my text -->
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><strong>Languages:</strong></td>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Afrikaans</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Suburb:</strong></td>
+                            <td>Ruyterwacht, </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Cape Town</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nationality:</strong></td>
+                            <td>South African</td>
+                        </tr>
+                        <tr>
+                            <td><h2><strong>Contact Me</strong></h2></td>
+                            </tr>
+                        <tr>
+                            <td><strong>Email:</strong></td>
+                            <td>ismetsamso94@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cell:</strong></td>
+                            <td>084 646 5456</td>
+                        </tr>
+                        <tr>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- added my linked profiles for my social media platforms -->
+                                <div>
+                                    <a href="https://www.facebook.com/ismet.samsodien" target="_blank"> <img class="icons" src="icons/facebook.png" alt=""></a>
+                                    <a href="http://www.instagram.com/ismet.samsodien" target="_blank"> <img class="icons" src="icons/instagram.png" alt=""></a>
+                                    <a href="https://github.com/ismet94" target="_blank"> <img class="icons" src="icons/github.png" alt="" ></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Selected profile picture with a class for positioning and scaling -->
+                <img src="images/me.jpg" alt="" class="profile" >
+            </section>   
+        </div>
 
 
+        <div>
+            <!-- education section added with anchor point -->
+            <h1 class="headers" id="education-jump">education</h1>
+            <section>
+                <!-- created a table to align content evenly throughout -->
+                <table>
+                    <tbody>
+                        <!-- secondary education -->
+                        <tr>
+                            <td><h2><strong>Secondary Education</strong></h2></td>
+                        </tr>
+                        <tr>
+                            <td><strong>High School:</strong></td>
+                            <td>HTS Bellville</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Highest Grade (Standard):</strong></td>
+                            <td>Grade 12 (Standard 10)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Subjects:</strong></td>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Afrikaans</td> 
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Maths Literacy</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Mechanical Engneering</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Engineering in Graphic Designing</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Computer Application Engineering</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Life Orientation</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td><strong>Completed:</strong></td>
+                            <td>Year 2012</td>
+                        </tr>
+                        <tr>
+                            <!-- tertiary education -->
+                            <td><h2><strong>Tertiary Education</strong></h2></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Current Education:</strong></td>
+                            <td>Web Development Course</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Subjects:</strong></td>
+                            <td>Code Coaching</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>HTML, CSS, SASS, javascript</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Life Skills</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Professional Development</td>
+                        </tr>
+                        <tr>
+                            <!-- Other Certificates -->
+                            <td><h2><strong>Other Skills</strong></h2></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Photoshop Skills:</strong></td>
+                            <td>Computer Graphic Designing</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1 Year internship</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Skills Acquired:</strong></td>
+                            <td>Photoshop CS6</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>illustrator</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Macromedia Freehand</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+           
 
-  
+        <div>
+            <!-- working experiences section added with anchor point -->
+            <h1 class="headers" id="work-jump">working experience</h1>
+            <section>
+                <!-- here I created another table so that my content is aligned evenly -->
+                <table>
+                    <tbody>
+                        <tr>
+                            <!-- workplace and job position added throughout -->
+                            <td><strong>Woolworths Food N1 City:</strong></td>
+                            <td>Replenished Work</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <!-- work duties and responsibilties implemented each with three bullet points -->
+                            <td>• Remove expired products
+                            <br>
+                                • Implemented new ways to the store front
+                            <br>
+                                • Introduced new stock on floors 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Period Worked:</strong></td>
+                            <td>Contract Apr 2013 - Nov 2013</td>
+                        </tr>
+                        <tr>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><strong>British Gas (Business):</strong></td>
+                            <td>Call Centre Agent</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>• Customer Billing
+                            <br>
+                                • Inquiries
+                            <br>
+                                • Support issues
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Period Worked:</strong></td>
+                            <td>Contract Feb 2014 - Jul 2014</td>
+                        </tr>
+                        <tr>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><strong>City of Cape Town:</strong></td>
+                            <td>Clerical work related</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>• Data Capturing
+                            <br>
+                                • Administrative Tasks
+                            <br>
+                                • Documentation
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Period Worked:</strong></td>
+                            <td>Contract Sep 2015 - Dec 2015</td>
+                        </tr>
+                        <tr>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Stowe Holdings:</strong></td>
+                            <td>Service Desk Technician</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>• Manage service-related documentations
+                            <br>
+                                • First-line support
+                            <br>
+                                • Log and manage calls
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Period Worked:</strong></td>
+                            <td>Contract Mar 2017 - Jan 2018</td>
+                        </tr>
+                        <tr>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Addictive Design cc:</strong></td>
+                            <td>Computer Graphic Designer</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>• Monthly changes to newspaper ads
+                            <br>
+                                • Creating logos and ads
+                            <br>
+                                • Assist with clients and their changes
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Period Worked:</strong></td>
+                            <td>Internship Feb 2018 - Nov 2018</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+
+        <div>
+            <!-- projects section added with a jump link -->
+            <h1 class="headers" id="project-jump">Projects</h1>
+            <section id="project-center">
+               <!-- different projects in png format with links -->
+                <a href="https://ismet94.github.io/my-apology-letter/" target="_blank"><img src="images/apology-letter.jpg" alt="" class="media-size"></a> 
+                <a href="https://ismet94.github.io/tech-and-movie-news/" target="_blank"><img src="images/tech-talk.jpg" alt="" class="media-size"></a> 
+                <a href="https://ismet94.github.io/virtual-reality/" target="_blank"><img src="images/vitual-reality.jpg" alt="" class="media-size"></a> 
+            </section>
+        </div>
+            
+
+        <div>
+            <!-- skills section added with anchor points -->
+            <h1 class="headers" id="skills-jump">Skills</h1>
+                <!-- different skills learned throughtout my years below are png files -->
+            <section id="skills-center">
+                <img  src="icons/html.png" alt="" class="skills">
+                <img  src="icons/css.png" alt="" class="skills">
+                <img  src="icons/javascript.png" alt="" class="skills">
+                <img  src="icons/sass.png" alt="" class="skills"> 
+                <img  src="icons/photoshop.png" alt="" class="skills">
+                <img  src="icons/illustrator.png" alt="" class="skills">
+                <img src="icons/freehand.png" alt="" class="skills">
+            </section>      
+        </div>  
+
+
+        <div>
+            <!-- simple and basic footer added to the website -->
+            <footer>
+                <!-- this funtion takes you back to the top of the page -->
+                <div>
+                    <a href="#home-jump" class="top"><img src="images/up.gif" alt="" class="up-size"> </a> 
+                </div>
+            </footer>
+        </div> 
+    </div>
+<!-- body property closed -->
 </body>
+<!-- end of html code -->
 </html>
