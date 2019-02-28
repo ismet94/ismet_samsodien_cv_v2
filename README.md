@@ -4,6 +4,9 @@ Online CV Version 2.0
 A substantial amount of researching used; books and going as far as using the github articles getting to know every function of constructing a powerful yet elegant one pager website.
 I came up with a solution to use a one pager website rather than using multiple pages. In this project my code included sass which implemented each aspect of each scss file. My ojective for doing this was so that I could in-corporate the new age code with javascripting to make the page come alive.
 
+The now updated CV version 2.0 has now converted from css to sass and now had some javascripting in for scroll effects.
+Changed the dark colour scheme to a more subtle white and blue themeing this enlightend the page and made it more alive. The background main image now got an abstract grey feeling with some photoshoping skills to fade in the bottom with the white website. 
+
 
 ## Setting up my workspace
 
@@ -96,6 +99,26 @@ Tools:
 - Readme Created 
 - Updated Readme file
 
+2019-02-26:
+- Converted all css to sass
+- Changed colour scheme
+- added new background
+- added more white space
+- created js folder
+- created style.scss imports
+
+2019-02-27:
+- Continued to convert to sass
+- copied all files and images from previous cv
+- fixed background images
+- edited sections to 100% width
+- changed font colour font
+
+2019-02-28:
+- Added js code
+- refined responsiveness
+- tested code
+- Updated Readme.md file
 
 ## Contributors
 
