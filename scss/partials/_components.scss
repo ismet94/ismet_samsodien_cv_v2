@@ -20,10 +20,20 @@
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.295);
     /* brightness dimmed to 90% */
     -webkit-filter: brightness(90%);
+    @keyframes identifier {
+    }
   }
-  
+  /* once hovered, the image brighness would increase to 110% */
+  .profile:hover {
+    -webkit-filter: brightness(110%);
+    @keyframes identifier {
+  }
+}
   
   /* dimmed the project link images to 90% */
   .media-size {
     -webkit-filter: brightness(90%);
+    @keyframes identifier {
+
   }
+}

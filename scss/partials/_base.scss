@@ -5,7 +5,8 @@
 /* The html and body holds all the text formatting, margin postions, */
 html, body {
     height: 100%;
-    background-color: rgb(3, 3, 3);
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0%;
     /* This verifies that my website reads my selected font from Google fonts*/
     font-family: 'Noto Sans', sans-serif;
     /* smooth scrolling funtion added to give a much flush feel to the website */
@@ -43,13 +44,14 @@ html, body {
   section {
     padding: 30px;
     /* a linear-gradient effect was used to give a sleek look */
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.425), rgba(252, 252, 252, 0));
+    background-color: rgb(0, 65, 126);;
     /* proper positioning is used here by adjusting the margins */
-    margin-left: 100px;
-    margin-right: 100px;
+    // this ensuires that the text colour is white
+    color: white;
     margin-bottom: 30px;
     /* this rounded the edges slightly*/
-    border-radius: 20px;
+    transition: 0.5 ease-in;
+    animation: ease-in;
   }
   
   /* below is the link colour, decoration and font size */
@@ -70,26 +72,23 @@ html, body {
   
   /* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
   a:hover {
-    color: rgb(180, 180, 180);
+    color: rgb(0, 65, 126);;
     font-size: 30px;
     /* the timing and delay is added to smoothen it out */
     transition-duration: 0.3s;
     transition-delay: 0.3;
     /* here a specific sequel is added */
     transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    text-decoration-style: none;
-    text-decoration-line: none; 
-    text-decoration: none;
+    /* this uses the mixins property */
+    @include hovers;
   }
   
   /* below is the active colour, decoration and font size */
   a:active {
     color: purple;
     font-size: 3px;
-    /* The decoration is added so that the lines disappears under the text */
-    text-decoration-style: none;
-    text-decoration-line: none; 
-    text-decoration: none;
+    /* this uses the mixins property */
+    @include hovers;
   }
   
   button:hover {
@@ -100,19 +99,20 @@ html, body {
     cursor: pointer;
   }
   
-  /* once hovered, the image brighness would increase to 110% */
-  .profile:hover {
-    -webkit-filter: brightness(110%);
-  }
   
-  /* once hovered, the project images brightens*/
+  
+  /* once git hovered, the project images brightens*/
   .media-size:hover {
     -webkit-filter: brightness(110%);
+    @keyframes identifier {
+
   }
-  
+}
   /* once hovered, the image brightens */
   .skills:hover {
     -webkit-filter: brightness(110%);
+    @keyframes identifier {
+
   }
   
-  
+}

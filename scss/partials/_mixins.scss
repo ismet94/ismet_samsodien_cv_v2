@@ -1,0 +1,31 @@
+@mixin hovers {
+    text-decoration-style: none;
+    text-decoration-line: none; 
+    text-decoration: none;
+}
+
+@mixin typewriter {
+        /* this ensures that no text is displayed until the cursor passes */
+        overflow: hidden;
+        margin: 0 auto; 
+        /* the cursor styling */
+        border-right: 0.1em solid rgb(0, 65, 126); 
+        /* this keeps the text on one line */
+        white-space: nowrap; 
+          -spacing: .1em; 
+        animation: 
+          typing 1.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+    }
+    
+    /* this is the typing effect using keyframes*/
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    /* this is the cursor blinking effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: rgb(0, 65, 126); }
+}
