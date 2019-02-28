@@ -45,7 +45,7 @@ git pull
 
 ## Live Link
 
-- [Ismet Samsodien CV Version 2]  ()
+- [Ismet Samsodien CV Version 2]  (https://ismet94.github.io/ismet_samsodien_cv_v2/)
 
 ## Prevalent Technologies Used
 
