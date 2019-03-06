@@ -1,5 +1,4 @@
-let $win = $(window);
-
-$win.on("scroll", function () {
-    
-});
+AOS.init({
+    duration: 2800,
+  })
+  

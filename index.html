@@ -12,21 +12,31 @@
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Noto+Sans" rel="stylesheet">
     <!-- This links the icon for the hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/javascript.js"></script>
+    <!-- Links the javascripting animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 <!-- this also holds an id for an anchor point -->
 </head  id="top">
 
 <body  class="secondary-bg" class="scroll">
+        <div class="main-bg">  
+    <input id="burger" type="checkbox" />
+
+    <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
     <!-- Main background selected for the first section this ensures that only the first section contains this image -->
-    <div class="main-bg">
+    
         <!-- header tag opened for the navigation bar -->
-        <header> 
+
             <nav>
                  <!--unordered list selected for the li tags  -->
                 <ul>
                     <!-- li tags opened with selected titles this includes anchor points to their destinations -->
-                    <li><a href="">Ismet Samsodien</a></li>
                     <li><a href="#home-jump">Home</a></li>    
                     <li><a href="#education-jump">Education</a></li>
                     <li><a href="#work-jump">Working Experience</a></li>
@@ -34,7 +44,6 @@
                     <li><a href="#skills-jump">Skills</a></li>
                 </ul>
             </nav>
-        </header>
     <!-- closed the div tag for the first section -->
     </div>
 
@@ -63,9 +72,9 @@
         <!-- Second section opened for Cv information -->
         <div>
             <!-- A consistency of the h1 tags used for the headings this includes a class with more css styling and positioning. I used an id here to complete the anchor points. -->
-            <h1 class="headers" id="home-jump">home</h1>
+            <h1 class="headers" id="home-jump" data-aos="fade-down">home</h1>
             <!-- First heading opened with the grid property to split the image from the content -->
-            <section  class="grid1">
+            <section  class="grid1" data-aos="fade-up">
                 <!-- table property was used to align all my text -->
                 <table>
                     <tbody>
@@ -125,8 +134,8 @@
 ------------------------------------------------------------------->
         <div>
             <!-- education section added with anchor point -->
-            <h1 class="headers" id="education-jump">education</h1>
-            <section>
+            <h1 class="headers" id="education-jump" data-aos="fade-down">education</h1>
+            <section data-aos="fade-up">
                 <!-- created a table to align content evenly throughout -->
                 <table>
                     <tbody>
@@ -233,8 +242,8 @@
 ------------------------------------------------------------------->
         <div>
             <!-- working experiences section added with anchor point -->
-            <h1 class="headers" id="work-jump">working experience</h1>
-            <section>
+            <h1 class="headers" id="work-jump" data-aos="fade-down">working experience</h1>
+            <section data-aos="fade-up">
                 <!-- here I created another table so that my content is aligned evenly -->
                 <table>
                     <tbody>
@@ -347,8 +356,8 @@
 ------------------------------------------------------------------->
         <div>
             <!-- projects section added with a jump link -->
-            <h1 class="headers" id="project-jump">Projects</h1>
-            <section id="project-center">
+            <h1 class="headers" id="project-jump" data-aos="fade-down">Projects</h1>
+            <section id="project-center" data-aos="fade-up">
                <!-- different projects in png format with links -->
                 <a href="https://ismet94.github.io/my-apology-letter/" target="_blank"><img src="images/apology-letter.jpg" alt="" class="media-size"></a> 
                 <a href="https://ismet94.github.io/tech-and-movie-news/" target="_blank"><img src="images/tech-talk.jpg" alt="" class="media-size"></a> 
@@ -362,9 +371,9 @@
 ------------------------------------------------------------------->
         <div>
             <!-- skills section added with anchor points -->
-            <h1 class="headers" id="skills-jump">Skills</h1>
+            <h1 class="headers" id="skills-jump" data-aos="fade-down">Skills</h1>
                 <!-- different skills learned throughtout my years below are png files -->
-            <section id="skills-center">
+            <section id="skills-center"  data-aos="fade-up">
                 <img  src="icons/html.png" alt="" class="skills">
                 <img  src="icons/css.png" alt="" class="skills">
                 <img  src="icons/javascript.png" alt="" class="skills">
@@ -380,16 +389,22 @@
             <!-- simple and basic footer added to the website -->
             <footer>
                 <!-- this funtion takes you back to the top of the page -->
-                <div>
+                <div data-aos="fade-down">
                     <a href="#home-jump" class="top"><img src="images/up.gif" alt="" class="up-size"> </a> 
                 </div>
-                <section>
+                <section >
                     Created by Ismet Samsodien
                 </section>
             </footer>
         </div> 
     </div>
-    
+
+    <!-- This enables animations for each section of the site here I linked the javasript.js file to the html document -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 <!-- body property closed -->
 </body>
 <!-- end of html code -->
