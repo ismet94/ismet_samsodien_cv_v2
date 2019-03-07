@@ -60,74 +60,8 @@
   -spacing: .1em;
   animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite; }
 
-/* this adds styling to the download button so that it fits the theme */
-.download-btn {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.596);
-  display: block;
-  /* border styling selected */
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 10px;
-  /* postioning determined */
-  margin-top: 3%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px; }
-
-.down-size {
-  height: 10%;
-  width: 10%; }
-
-/* this funtion helps the scroll down is set in its right position */
-.down {
-  /* colour and display selected */
-  display: block;
-  /* text align and spacing */
-  text-align: center;
-  margin-top: 2%; }
-
-/* this class grids my first section into two seperate columns */
-.grid1 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
-
-/* this centers all images in the projects section */
-#project-center {
-  text-align: center; }
-
-/* this class links to my social media icons in the home section it only justifies the height and width for each */
-.icons {
-  width: 20%;
-  height: 20%;
-  -webkit-filter: invert(100%); }
-
-/* this determines the height and width of the skills section images */
-.skills {
-  height: 20%;
-  width: 20%;
-  -webkit-filter: brightness(90%); }
-
-/* this centers all images in the skills section */
-#skills-center {
-  text-align: center; }
-
-.top {
-  /* colour and display selected */
-  color: blue;
-  display: block;
-  /* text align and spacing */
-  text-align: center;
-  margin-top: 2%; }
-
-.up-size {
-  height: 6%;
-  width: 6%;
-  transform: rotate(180deg);
-  -webkit-filter: invert(100%); }
-
 /*************************
-      Base
+*********  Base  *********
 *************************/
 * {
   box-sizing: border-box; }
@@ -140,151 +74,98 @@ html, body {
   /* This verifies that my website reads my selected font from Google fonts*/
   font-family: 'Noto Sans', sans-serif;
   /* smooth scrolling funtion added to give a much flush feel to the website */
-  scroll-behavior: smooth;
-  transition: 1s; }
-  html > span, body > span {
-    text-transform: none;
-    opacity: .5;
-    font-weight: 300;
-    font-size: 12px; }
+  scroll-behavior: smooth; }
 
-input + label {
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  height: 20px;
-  width: 15px;
-  z-index: 5; }
-  input + label span {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 50%;
-    margin-top: -1px;
-    left: 0;
-    display: block;
-    background: white;
-    transition: .5s; }
-  input + label span:first-child {
-    top: 3px; }
-  input + label span:last-child {
-    top: 16px; }
+body {
+  display: box;
+  box-orient: vertical;
+  box-pack: center;
+  box-align: center;
+  background: #f3faff; }
 
-label:hover {
-  cursor: pointer; }
-
-input:checked + label span {
-  opacity: 0;
-  top: 50%; }
-input:checked + label span:first-child {
-  opacity: 1;
-  transform: rotate(405deg); }
-input:checked + label span:last-child {
-  opacity: 1;
-  transform: rotate(-405deg); }
-
-input ~ nav {
-  background: white;
-  position: fixed;
-  top: 0;
-  left: 0;
+div {
   width: 100%;
-  height: 0px;
-  z-index: 3;
-  transition: .5s;
-  transition-delay: .5s;
-  overflow: hidden; }
-  input ~ nav > ul {
-    text-align: center;
-    position: absolute;
-    top: 0%;
-    left: 20%;
-    right: 20%; }
-    input ~ nav > ul > li {
-      opacity: 0;
-      transition: .5s;
-      transition-delay: 0s; }
-      input ~ nav > ul > li > a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        font-weight: 700;
-        font-family: 'Noto Sans', sans-serif;
-        display: block;
-        padding: 30px; }
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
 
-input:checked ~ nav {
-  height: 80%;
-  transition-delay: 0s; }
-  input:checked ~ nav > ul > li {
-    opacity: 1;
-    transition-delay: .3s; }
+p {
+  height: 0;
+  padding: 0 15px;
+  overflow: hidden;
+  transition: height .4s ease-out, padding .4s ease-out; }
 
-/* this styles the navigation bar with the text colour, alignment and position */
-/* the section is used so that each heading can be split from each other */
-section {
-  padding: 30px;
-  /* a linear-gradient effect was used to give a sleek look */
-  background-color: #00417e;
-  /* proper positioning is used here by adjusting the margins */
-  color: white;
-  margin-bottom: 30px;
-  /* this rounded the edges slightly*/
-  transition: 0.5 ease-in;
-  animation: ease-in; }
+h1 {
+  font-size: 1em; }
 
-/* below is the link colour, decoration and font size */
-a:link {
-  color: #00417e;
-  font-size: 25px;
-  /* The decoration is added so that the lines disappears under the text */
-  text-decoration-style: none;
-  text-decoration-line: none;
-  text-decoration: none; }
-
-/* below is the visited colour and font size */
-a:visited {
-  color: #6d00b6;
-  font-size: 30px; }
-
-/* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
-a:hover {
-  color: #00417e;
-  font-size: 30px;
-  /* the timing and delay is added to smoothen it out */
-  transition-duration: 0.3s;
-  transition-delay: 0.3;
-  /* here a specific sequel is added */
-  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  /* this uses the mixins property */
-  text-decoration-style: none;
-  text-decoration-line: none;
-  text-decoration: none; }
-
-/* below is the active colour, decoration and font size */
-a:active {
-  color: purple;
-  font-size: 3px;
-  /* this uses the mixins property */
-  text-decoration-style: none;
-  text-decoration-line: none;
-  text-decoration: none; }
-
-button:hover {
-  background-color: white;
-  color: black;
-  text-align: center;
+a {
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  background: linear-gradient(#eee, #ccc);
+  color: #333;
   text-decoration: none;
-  cursor: pointer; }
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #aaa; }
 
-/* once git hovered, the project images brightens*/
-.media-size:hover {
-  -webkit-filter: brightness(110%); }
+#home {
+  border-radius: 2px 2px 0 0; }
 
-/* once hovered, the image brightens */
-.skills:hover {
-  -webkit-filter: brightness(110%); }
+#edu {
+  border-radius: 0 0 3px 3px; }
 
+#work {
+  border-radius: 2px 2px 0 0; }
+
+#project {
+  border-radius: 0 0 3px 3px; }
+
+#skills {
+  border-radius: 0 0 3px 3px; }
+
+a:hover, a:focus {
+  opacity: .9; }
+
+a:active {
+  background: linear-gradient(#ccc, #ddd);
+  color: #000; }
+
+:target + p {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc; }
+
+#home:target + p {
+  height: 70px; }
+
+#home:target + p {
+  height: 230px; }
+
+#edu:target {
+  border-radius: 0; }
+
+#edu:target + p {
+  height: 180px; }
+
+#work:target + p {
+  height: 70px; }
+
+#work:target + p {
+  height: 230px; }
+
+#project:target {
+  border-radius: 0; }
+
+#project:target + p {
+  height: 180px; }
+
+#skills:target {
+  border-radius: 0; }
+
+#skills:target + p {
+  height: 180px; }
+
+/* the section is used so that each heading can be split from each other */
 /*************************
         Media Queries
   *************************/

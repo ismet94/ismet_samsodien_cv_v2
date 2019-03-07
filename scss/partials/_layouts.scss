@@ -48,91 +48,91 @@
   }
 
   
-  /* this adds styling to the download button so that it fits the theme */
-  .download-btn {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.596);
-    display: block;
-    /* border styling selected */
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 10px;
-    /* postioning determined */
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-  }
+  // /* this adds styling to the download button so that it fits the theme */
+  // .download-btn {
+  //   color: white;
+  //   background-color: rgba(0, 0, 0, 0.596);
+  //   display: block;
+  //   /* border styling selected */
+  //   border-style: solid;
+  //   border-width: 3px;
+  //   border-radius: 10px;
+  //   /* postioning determined */
+  //   margin-top: 3%;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   padding: 20px;
+  // }
   
-  .down-size {
-    height: 10%;
-    width: 10%;
-  }
+  // .down-size {
+  //   height: 10%;
+  //   width: 10%;
+  // }
   
-  /* this funtion helps the scroll down is set in its right position */
-  .down {
-    /* colour and display selected */
-    display: block;
-    /* text align and spacing */
-    text-align: center;
-    margin-top: 2%;
-  }
+  // /* this funtion helps the scroll down is set in its right position */
+  // .down {
+  //   /* colour and display selected */
+  //   display: block;
+  //   /* text align and spacing */
+  //   text-align: center;
+  //   margin-top: 2%;
+  // }
   
-  /* this class grids my first section into two seperate columns */
-  .grid1 {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
+  // /* this class grids my first section into two seperate columns */
+  // .grid1 {
+  //   display: grid;
+  //   grid-template-columns: repeat(2,1fr);
+  // }
   
-  /* this centers all images in the projects section */
-  #project-center {
-    text-align: center;
-  }
+  // /* this centers all images in the projects section */
+  // #project-center {
+  //   text-align: center;
+  // }
   
-  /* this class links to my social media icons in the home section it only justifies the height and width for each */
-  .icons {
-    width: 20%;
-    height: 20%;
-      -webkit-filter: invert(100%);
+  // /* this class links to my social media icons in the home section it only justifies the height and width for each */
+  // .icons {
+  //   width: 20%;
+  //   height: 20%;
+  //     -webkit-filter: invert(100%);
 
-    @keyframes identifier {
+  //   @keyframes identifier {
       
-    }
-  }
+  //   }
+  // }
   
-  /* this determines the height and width of the skills section images */
-  .skills {
-    height: 20%;
-    width: 20%;
-    -webkit-filter: brightness(90%);
-    @keyframes identifier {
-    }
-  }
-  
-  
-  /* this centers all images in the skills section */
-  #skills-center {
-    text-align: center;
-  }
+  // /* this determines the height and width of the skills section images */
+  // .skills {
+  //   height: 20%;
+  //   width: 20%;
+  //   -webkit-filter: brightness(90%);
+  //   @keyframes identifier {
+  //   }
+  // }
   
   
-  .top {
-    /* colour and display selected */
-    color: blue;
-    display: block;
-    /* text align and spacing */
-    text-align: center;
-    margin-top: 2%;
-  }
+  // /* this centers all images in the skills section */
+  // #skills-center {
+  //   text-align: center;
+  // }
   
-  .up-size {
-    height: 6%;
-    width: 6%;
-    transform: rotate(180deg);
-    -webkit-filter: invert(100%);
-    @keyframes identifier {
-    }
-  }
+  
+  // .top {
+  //   /* colour and display selected */
+  //   color: blue;
+  //   display: block;
+  //   /* text align and spacing */
+  //   text-align: center;
+  //   margin-top: 2%;
+  // }
+  
+  // .up-size {
+  //   height: 6%;
+  //   width: 6%;
+  //   transform: rotate(180deg);
+  //   -webkit-filter: invert(100%);
+  //   @keyframes identifier {
+  //   }
+  // }
 
   
   
