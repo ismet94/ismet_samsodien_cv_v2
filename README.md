@@ -120,6 +120,17 @@ Tools:
 - tested code
 - Updated Readme.md file
 
+2019-03-06:
+- Updated CV with a burger menu
+- Tested and altered to desired look
+- Added comments
+
+2019-03-08
+- Removed burger menu and the navbar property
+- Converted all to a button layout 
+- further testing and styling added
+
+
 ## Contributors
 
 Ismet Samsodien - 2019
