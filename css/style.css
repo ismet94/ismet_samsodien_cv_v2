@@ -24,7 +24,8 @@
 .secondary-bg {
   background: url(../images/roots.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 
 /* this ensures that the headings for each section is coloured and positioned properly */
 .headers {
@@ -45,17 +46,11 @@
   transform: translate(-50%, -50%);
   /* Colour and size determined */
   color: white;
-  font-size: 30px;
   text-shadow: 0 4px 5px black;
   animation-name: direction;
   animation-duration: 2s;
   animation-iteration-count: 1; }
 
-@keyframes direction {
-  from {
-    font-size: 5px; }
-  to {
-    font-size: 30px; } }
 /* this adds styling to the download button so that it fits the theme */
 .download-btn {
   color: white;
@@ -64,11 +59,11 @@
   /* border styling selected */
   border-style: solid;
   border-width: 3px;
-  border-radius: 10px;
-  /* postioning determined */
+  border-radius: 15px;
+  padding: 1.3%;
+  /* positioning determined */
   margin-left: auto;
-  margin-right: auto;
-  padding: 20px; }
+  margin-right: auto; }
 
 .down-size {
   height: 10%;
@@ -85,7 +80,13 @@
 /* this class grids my first section into two seperate columns */
 .grid1 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  width: 80%;
+  margin: auto;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  grid-template-areas: "details details profilepic" "socialstats socialstats profilepic"; }
 
 /* this centers all images in the projects section */
 #project-center {
@@ -125,6 +126,7 @@
 /* The html and body holds all the text formatting, margin postions, */
 html, body {
   height: 100%;
+  margin: 0px;
   background-color: #030303;
   /* This verifies that my website reads my selected font from Google fonts*/
   font-family: 'Noto Sans', sans-serif;
@@ -133,19 +135,12 @@ html, body {
   transition: 1s; }
 
 /* this styles the navigation bar with the text colour, alignment and position */
-nav {
-  background-color: rgba(0, 0, 0, 0.39);
-  text-align: center;
-  font-family: 'Lalezar', cursive;
-  color: white;
-  position: fixed;
-  height: 60px;
-  top: 20px;
-  right: 60px;
-  left: 0px; }
-
 ul {
   padding-left: 0px; }
+
+h6 {
+  font-size: 60px;
+  width: 700px; }
 
 /* this ensures that each li tag is spaced out evenly and consistant */
 li {
@@ -156,20 +151,19 @@ li {
 
 /* the section is used so that each heading can be split from each other */
 section {
+  width: 80%;
   padding: 30px;
   /* a linear-gradient effect was used to give a sleek look */
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.508), rgba(255, 255, 255, 0.425), rgba(252, 252, 252, 0));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.733), rgba(255, 255, 255, 0.685), rgba(252, 252, 252, 0.103));
   /* proper positioning is used here by adjusting the margins */
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 6%;
   margin-bottom: 30px;
   /* this rounded the edges slightly*/
-  border-radius: 20px; }
+  border-radius: 10px; }
 
 /* below is the link colour, decoration and font size */
 a:link {
-  color: white;
-  font-size: 25px;
+  color: #313131;
   /* The decoration is added so that the lines disappears under the text */
   text-decoration-style: none;
   text-decoration-line: none;
@@ -178,12 +172,11 @@ a:link {
 /* below is the visited colour and font size */
 a:visited {
   color: #6d00b6;
-  font-size: 30px; }
+  font-size: 15px; }
 
 /* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
 a:hover {
-  color: #b4b4b4;
-  font-size: 30px;
+  color: #5e5e5e;
   /* the timing and delay is added to smoothen it out */
   transition-duration: 0.3s;
   transition-delay: 0.3;
@@ -210,9 +203,6 @@ button:hover {
   cursor: pointer; }
 
 /* once hovered, the image brighness would increase to 110% */
-.profile:hover {
-  -webkit-filter: brightness(110%); }
-
 /* once hovered, the project images brightens*/
 .media-size:hover {
   -webkit-filter: brightness(110%); }

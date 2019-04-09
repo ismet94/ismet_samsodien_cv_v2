@@ -15,6 +15,7 @@
   background: url(../images/roots.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 /* this ensures that the headings for each section is coloured and positioned properly */
@@ -37,17 +38,12 @@
   transform: translate(-50%, -50%);
   /* Colour and size determined */
   color: white;
-  font-size: 30px;
   text-shadow: 0 4px 5px black;
   animation-name: direction;
   animation-duration: 2s;
   animation-iteration-count: 1;
 }
 
-@keyframes direction {
-  from {font-size: 5px;}
-  to {font-size: 30px;}
-}
 
 /* this adds styling to the download button so that it fits the theme */
 .download-btn {
@@ -57,11 +53,12 @@
   /* border styling selected */
   border-style: solid;
   border-width: 3px;
-  border-radius: 10px;
-  /* postioning determined */
+  border-radius: 15px;
+  padding: 1.3%;
+  /* positioning determined */
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+
 }
 
 .down-size {
@@ -81,7 +78,17 @@
 /* this class grids my first section into two seperate columns */
 .grid1 {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  width: 80%;
+  margin: auto;
+  
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+        
+  grid-template-areas: 
+                "details details profilepic"
+                "socialstats socialstats profilepic"
 }
 
 /* this centers all images in the projects section */

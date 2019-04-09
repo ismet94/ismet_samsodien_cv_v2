@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Links the javascripting animations -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 <!-- this also holds an id for an anchor point -->
 </head  id="top">
@@ -25,16 +26,31 @@
         <header> 
             <nav>
                  <!--unordered list selected for the li tags  -->
-                <ul>
+                <!-- <ul> -->
                     <!-- li tags opened with selected titles this includes anchor points to their destinations -->
-                    <li><a href="#">Ismet Samsodien</a></li>
+                    <!-- <li><a href="#">Ismet Samsodien</a></li>
                     <li><a href="#home-jump">Home</a></li>    
                     <li><a href="#education-jump">Education</a></li>
                     <li><a href="#work-jump">Working Experience</a></li>
                     <li><a href="#project-jump">Projects</a></li>
                     <li><a href="#skills-jump">Skills</a></li>
                 </ul>
-            </nav>
+            </nav> -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Features</a>
+                        <a class="nav-item nav-link" href="#">Pricing</a>
+                        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                      </div>
+                    </div>
+                  </nav>
         </header>
     <!-- closed the div tag for the first section -->
     </div>
@@ -43,7 +59,7 @@
     <div>
         <!-- div tag opened with a class for the main heading -->
         <div  class="center">
-            <h1>CV of Ismet Samsodien</h1>
+            <h6>CV of Ismet Samsodien</h6>
             <!-- a button was used to download the resume to your destination -->
             <div>
                 <a href="files/Ismet Samsodien.pdf"> <button class="download-btn">Download Resume</button></a>     
@@ -59,64 +75,52 @@
     <div class="secondary-bg" class="main"> 
 
         <!-- Second section opened for Cv information -->
-        <div>
+  
             <!-- A consistency of the h1 tags used for the headings this includes a class with more css styling and positioning. I used an id here to complete the anchor points. -->
             <h1 class="headers" id="home-jump" data-aos="fade-down">home</h1>
             <!-- First heading opened with the grid property to split the image from the content -->
-            <section  class="grid1" data-aos="fade-up">
+            <section   data-aos="fade-up">
                 <!-- table property was used to align all my text -->
-                <table data-aos="flip-left">
-                    <tbody>
-                        <tr>
-                            <td><strong>Languages:</strong></td>
-                            <td>English</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Afrikaans</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Suburb:</strong></td>
-                            <td>Ruyterwacht, </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Cape Town</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Nationality:</strong></td>
-                            <td>South African</td>
-                        </tr>
-                        <tr>
-                            <td><h2><strong>Contact Me</strong></h2></td>
-                            </tr>
-                        <tr>
-                            <td><strong>Email:</strong></td>
-                            <td>ismetsamso94@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cell:</strong></td>
-                            <td>084 646 5456</td>
-                        </tr>
-                        <tr>
-                            <td><p></p></td>
-                        </tr>
-                        <tr>
-                            <td>
+                <div class="grid1">
+                    <div class="details">
+                        <p>
+                            <strong>Languages:</strong> English
+                            <br>
+                            Afrikaans
+                        </p>
+                        <p>
+                            <strong>Suburb: </strong> Ruyterwacht, Cape Town
+                        </p>
+                        <p>
+                            Nationality: South African
+                        </p>
+                        <p>
+                            <h2><strong>Contact Me</strong></h2>
+                        </p>
+                        <p>
+                            <strong>Email:</strong> ismetsamso94@gmail.com
+                        </p>
+                        <p>
+                            <strong>Cell:</strong> 084 646 5456
+                        </p>
+                    </div>
+                  
+                    
+                    <div class="profile">
+                         <!-- Selected profile picture with a class for positioning and scaling -->
+                    <img src="images/me.jpg" class="profilepicture" alt=""  >
+                        </div>
+                   
+                        <div class="contact-social">
                                 <!-- added my linked profiles for my social media platforms -->
-                                <div>
-                                    <a href="https://www.facebook.com/ismet.samsodien" target="_blank"> <img class="icons" src="icons/facebook.png" alt=""></a>
-                                    <a href="https://www.linkedin.com/in/ismet-samsodien-642240182" target="_blank"> <img class="icons" src="icons/linkedin.png" alt=""></a>
-                                    <a href="https://github.com/ismet94" target="_blank"> <img class="icons" src="icons/github.png" alt="" ></a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- Selected profile picture with a class for positioning and scaling -->
-                <img src="images/me.jpg" alt="" class="profile" >
+                               <a href="https://www.facebook.com/ismet.samsodien" target="_blank"> <img class="icons" src="icons/facebook.png" alt=""></a>
+                               <a href="https://www.linkedin.com/in/ismet-samsodien-642240182" target="_blank"> <img class="icons" src="icons/linkedin.png" alt=""></a>
+                               <a href="https://github.com/ismet94" target="_blank"> <img class="icons" src="icons/github.png" alt="" ></a>
+                           </div>
+                </div>
+                
             </section>   
-        </div>
+      
 
 
         <div>
@@ -371,6 +375,11 @@
             </footer>
         </div> 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
