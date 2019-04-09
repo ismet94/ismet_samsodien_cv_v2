@@ -16,13 +16,16 @@
 
 .contact-social {
   grid-area: socialstats;
-  width: 100%;
+
+  
 }
+
 
 .profile {
   grid-area: profilepic;
-
+  height: 90px;
 }
+
 
 .profilepicture {
   /* height and width determined */

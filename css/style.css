@@ -27,21 +27,11 @@
   background-position: center;
   background-attachment: fixed; }
 
-/* this ensures that the headings for each section is coloured and positioned properly */
-.headers {
-  color: white;
-  text-align: center;
-  /* the text transformation was used to uppercase all letters so that it stands out */
-  text-transform: uppercase;
-  font-size: 50px;
-  padding-top: 80px;
-  scroll-behavior: smooth; }
-
 /* This displays my name and surname and jusitifies the positioning of the text */
 .center {
   /* Ensures that the text is centered evenly */
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* Colour and size determined */
@@ -50,6 +40,11 @@
   animation-name: direction;
   animation-duration: 2s;
   animation-iteration-count: 1; }
+
+.hero-heading {
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 5%; }
 
 /* this adds styling to the download button so that it fits the theme */
 .download-btn {
@@ -77,16 +72,26 @@
   text-align: center;
   margin-top: 2%; }
 
+/* this ensures that the headings for each section is coloured and positioned properly */
+.headers {
+  color: white;
+  text-align: center;
+  /* the text transformation was used to uppercase all letters so that it stands out */
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-top: 80px;
+  scroll-behavior: smooth; }
+
 /* this class grids my first section into two seperate columns */
 .grid1 {
   display: grid;
   width: 80%;
   margin: auto;
   /* grid columns and rows size */
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-gap: 15px;
-  grid-template-areas: "details details profilepic" "socialstats socialstats profilepic"; }
+  grid-template-areas: "details profilepic" "socialstats  profilepic"; }
 
 /* this centers all images in the projects section */
 #project-center {
@@ -94,8 +99,9 @@
 
 /* this class links to my social media icons in the home section it only justifies the height and width for each */
 .icons {
+  background-size: contain;
   width: 20%;
-  height: 20%; }
+  height: 100%; }
 
 /* this determines the height and width of the skills section images */
 .skills {
@@ -128,13 +134,10 @@ html, body {
   height: 100%;
   margin: 0px;
   background-color: #030303;
-  /* This verifies that my website reads my selected font from Google fonts*/
-  font-family: 'Noto Sans', sans-serif;
   /* smooth scrolling funtion added to give a much flush feel to the website */
   scroll-behavior: smooth;
   transition: 1s; }
 
-/* this styles the navigation bar with the text colour, alignment and position */
 ul {
   padding-left: 0px; }
 
@@ -158,6 +161,8 @@ section {
   /* proper positioning is used here by adjusting the margins */
   margin-left: 6%;
   margin-bottom: 30px;
+  /* This verifies that my website reads my selected font from Google fonts*/
+  font-family: 'Noto Sans', sans-serif;
   /* this rounded the edges slightly*/
   border-radius: 10px; }
 
@@ -328,8 +333,9 @@ button:hover {
 
   /* this class grids my first section into two seperate columns */
   .grid1 {
-    display: grid;
-    grid-template-columns: repeat(1, 0fr); }
+    display: block;
+    grid-template-columns: repeat(1, 0fr);
+    grid-template-areas: "details" "socialstats " "profilepic"; }
 
   /* this class links to the profile picture used in the home section */
   .profile {

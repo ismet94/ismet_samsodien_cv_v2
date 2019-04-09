@@ -136,8 +136,12 @@ section {
 
 /* this class grids my first section into two seperate columns */
 .grid1 {
-  display: grid;
+  display: block;
   grid-template-columns: repeat(1,0fr);
+  grid-template-areas: 
+  "details"
+  "socialstats "
+  "profilepic"
 }
 
 /* this class links to the profile picture used in the home section */

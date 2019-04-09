@@ -7,27 +7,10 @@ html, body {
   height: 100%;
   margin: 0px;
   background-color: rgb(3, 3, 3);
-  /* This verifies that my website reads my selected font from Google fonts*/
-  font-family: 'Noto Sans', sans-serif;
   /* smooth scrolling funtion added to give a much flush feel to the website */
   scroll-behavior: smooth;
   transition: 1s;
 }
-
-/* this styles the navigation bar with the text colour, alignment and position */
-// nav {
-//   // background-color: rgba(0, 0, 0, 0.39);
-//   width: 100%;
-//   background-color: rgba(255, 255, 255, 0.637);
-//   text-align: center;
-//   font-family: 'Lalezar', cursive;
-//   position: fixed;
-//   height: 60px;
-//   top: 0px;
-//   right: 60px;
-//   left: 0px;
-//   z-index: 1;
-// }
 
 ul {
   padding-left: 0px;
@@ -56,6 +39,8 @@ section {
   /* proper positioning is used here by adjusting the margins */
   margin-left: 6%;
   margin-bottom: 30px;
+    /* This verifies that my website reads my selected font from Google fonts*/
+    font-family: 'Noto Sans', sans-serif;
   /* this rounded the edges slightly*/
   border-radius: 10px;
 }
