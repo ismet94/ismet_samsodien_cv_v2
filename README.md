@@ -125,11 +125,15 @@ Tools:
 - Tested and altered to desired look
 - Added comments
 
-2019-03-08
+2019-03-08:
 - Removed burger menu and the navbar property
 - Converted all to a button layout 
 - further testing and styling added
 
+2019-04-09:
+- Added bootstrap navbar
+- Created grid layout for sections
+- Imported recent projects
 
 ## Contributors
 
