@@ -5,9 +5,8 @@
 /******* Mobile Device  *******/
 /* Responsive design for a mobile device */
 @media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (min-width: 320px) 
+and (max-width: 480px) {
 
 /* This ensures that the background position and size fits all resolutions **Add multimedia sizes** */
 .main-bg {
@@ -167,9 +166,23 @@ table {
   font-size: 12px;
 }
 
-/* this centers all images in the projects section */
-#project-center {
-  text-align: center;
+.grid-project {
+  display: block;
+  // width: 90%;
+  // margin: auto;
+  
+  // /* grid columns and rows size */
+  // grid-template-columns: repeat(1, 1fr);
+  // grid-template-rows: auto;
+  // grid-gap: 5px;
+        
+  // grid-template-areas: 
+  //               "apology"
+  //               "tech"
+  //               "outdoor"
+  //               "virtual"
+  //               "carblog"
+  //               "furniture"
 }
 
 /* this ensures that the project images are sized correctly */

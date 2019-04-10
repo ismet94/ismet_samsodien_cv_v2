@@ -12,6 +12,12 @@ html, body {
   transition: 1s;
 }
 
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
 ul {
   padding-left: 0px;
 }
@@ -35,7 +41,7 @@ section {
   width: 80%;
   padding: 30px;
   /* a linear-gradient effect was used to give a sleek look */
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.733), rgba(255, 255, 255, 0.685), rgba(252, 252, 252, 0.103));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.733), rgba(255, 255, 255, 0.685), rgba(252, 252, 252, 0.027));
   /* proper positioning is used here by adjusting the margins */
   margin-left: 6%;
   margin-bottom: 30px;

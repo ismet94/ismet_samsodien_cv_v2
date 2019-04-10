@@ -10,32 +10,27 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Selected fonts for my page selected from google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Noto+Sans" rel="stylesheet">
-    <!-- This links the icon for the hamburger menu -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Links the javascripting animations -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link for the bootstrap navbar -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    
     
 <!-- this also holds an id for an anchor point -->
 </head  id="top">
 
 <body>
+
+       
     <!-- Main background selected for the first section this ensures that only the first section contains this image -->
     <div class="main-bg">
         <!-- header tag opened for the navigation bar -->
         <header> 
             <nav>
                  <!--unordered list selected for the li tags  -->
-                <!-- <ul> -->
-                    <!-- li tags opened with selected titles this includes anchor points to their destinations -->
-                    <!-- <li><a href="#">Ismet Samsodien</a></li>
-                    <li><a href="#home-jump">Home</a></li>    
-                    <li><a href="#education-jump">Education</a></li>
-                    <li><a href="#work-jump">Working Experience</a></li>
-                    <li><a href="#project-jump">Projects</a></li>
-                    <li><a href="#skills-jump">Skills</a></li>
-                </ul>
-            </nav> -->
+
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="#">Ismet Samsodien</a>
@@ -56,6 +51,9 @@
     <!-- closed the div tag for the first section -->
     </div>
 
+
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
     <!-- div property selected so that each divider has a section to it -->
     <div>
         <!-- div tag opened with a class for the main heading -->
@@ -65,7 +63,7 @@
             </div>
             <!-- a button was used to download the resume to your destination -->
             <div>
-                <a href="files/Ismet Samsodien.pdf"> <button class="download-btn">Download Resume</button></a>     
+                <a href="files/Ismet Samsodien .pdf"> <button class="download-btn">Download Resume</button></a>     
             </div>
             <br>
             <div>
@@ -344,12 +342,28 @@
         <div>
             <!-- projects section added with a jump link -->
             <h1 class="headers" id="project-jump" data-aos="fade-down">Projects</h1>
-            <section id="project-center" data-aos="fade-up">
-               <!-- different projects in png format with links -->
-                <a href="https://ismet94.github.io/my-apology-letter/" target="_blank"><img src="images/apology-letter.jpg" alt="" class="media-size"></a> 
-                <a href="https://ismet94.github.io/tech-and-movie-news/" target="_blank"><img src="images/tech-talk.jpg" alt="" class="media-size"></a> 
-                <a href="https://ismet94.github.io/virtual-reality/" target="_blank"><img src="images/vitual-reality.jpg" alt="" class="media-size"></a> 
-                <a href="https://ismet94.github.io/virtual-reality/" target="_blank"><img src="images/outdoor.jpg" alt="" class="media-size"></a> 
+            <section data-aos="fade-up">
+                <div class="grid-project">
+                    <div class="apology-letter">
+                        <a href="https://ismet94.github.io/my-apology-letter/" target="_blank"><img src="images/apology-letter.jpg" alt="" class="media-size"></a> 
+                    </div>
+                    <div class="tech-talk">
+                        <a href="https://ismet94.github.io/tech-and-movie-news/" target="_blank"><img src="images/tech-talk.jpg" alt="" class="media-size"></a> 
+                    </div>
+                    <div class="virtual-reality">
+                        <a href="https://ismet94.github.io/virtual-reality/" target="_blank"><img src="images/vitual-reality.jpg" alt="" class="media-size"></a> 
+                    </div>
+                    <div class="outdoor-adventure">
+                        <a href="https://ismet94.github.io/outdoor-adventures/" target="_blank"><img src="images/outdoor.jpg" alt="" class="media-size"></a> 
+                    </div>
+                    <div class="car-fanatic-blog">
+                        <a href="http://car-fanatic-blog-car-fanatic-blog.7e14.starter-us-west-2.openshiftapps.com/" target="_blank"><img src="images/car-blog.jpg" alt="" class="media-size"></a> 
+                    </div>
+                    <div class="furniture-shop">
+                        <a href="https://ismet94.github.io/furniture-shop/" target="_blank"><img src="images/furniture-shop.jpg" alt="" class="media-size"></a> 
+                    </div>
+                </div>
+          
             </section>
         </div>
             
@@ -381,6 +395,8 @@
         </div> 
     </div>
 
+    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -395,3 +411,4 @@
 </body>
 <!-- end of html code -->
 </html>
+

@@ -48,6 +48,11 @@ html, body {
   scroll-behavior: smooth;
   transition: 1s; }
 
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1; }
+
 ul {
   padding-left: 0px; }
 
@@ -67,7 +72,7 @@ section {
   width: 80%;
   padding: 30px;
   /* a linear-gradient effect was used to give a sleek look */
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.733), rgba(255, 255, 255, 0.685), rgba(252, 252, 252, 0.103));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.733), rgba(255, 255, 255, 0.685), rgba(252, 252, 252, 0.027));
   /* proper positioning is used here by adjusting the margins */
   margin-left: 6%;
   margin-bottom: 30px;
@@ -143,11 +148,51 @@ button:hover {
   background-position: center;
   background-attachment: fixed; }
 
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f3f3f3;
+  background: rgba(161, 154, 154, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top i {
+  color: #3f3a3a;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9); }
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px; }
+
 /* This displays my name and surname and jusitifies the positioning of the text */
 .center {
   /* Ensures that the text is centered evenly */
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* Colour and size determined */
@@ -160,8 +205,29 @@ button:hover {
 .hero-heading {
   font-size: 60px;
   text-align: center;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  /* This makes sure that no text is displayed yet */
+  overflow: hidden;
+  /* This keeps all the lettering in one line */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .12em;
+  /* styling for the blinker */
+  border-right: 0.15em solid #ffd900;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
 
+/* This creates the typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+/* The blniker effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #ffd900; } }
 /* this adds styling to the download button so that it fits the theme */
 .download-btn {
   color: white;
@@ -211,7 +277,37 @@ button:hover {
 
 /* this centers all images in the projects section */
 #project-center {
-  text-align: center; }
+  background-size: contain; }
+
+.grid-project {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "apology tech" "outdoor virtual" "carblog furniture"; }
+
+.apology-letter {
+  grid-area: apology;
+  background-size: contain; }
+
+.tech-talk {
+  grid-area: tech;
+  background-size: contain; }
+
+.virtual-reality {
+  grid-area: virtual; }
+
+.outdoor-adventures {
+  grid-area: outdoor; }
+
+.car-fanatic-blog {
+  grid-area: carblog; }
+
+.furniture-shop {
+  grid-area: furniture; }
 
 /* this class links to my social media icons in the home section it only justifies the height and width for each */
 .icons {
@@ -247,7 +343,7 @@ button:hover {
 *************************/
 /******* Mobile Device  *******/
 /* Responsive design for a mobile device */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   /* This ensures that the background position and size fits all resolutions **Add multimedia sizes** */
   .main-bg {
     background-image: url(../images/main.jpg);
@@ -383,9 +479,8 @@ button:hover {
   table {
     font-size: 12px; }
 
-  /* this centers all images in the projects section */
-  #project-center {
-    text-align: center; }
+  .grid-project {
+    display: block; }
 
   /* this ensures that the project images are sized correctly */
   .media-size {
