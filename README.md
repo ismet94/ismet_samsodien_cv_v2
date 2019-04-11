@@ -135,6 +135,11 @@ Tools:
 - Created grid layout for sections
 - Imported recent projects
 
+2019-04-11:
+- Fixed responsiveness with new code
+- Added proper naming conventions
+- Back to top fixed
+
 ## Contributors
 
 Ismet Samsodien - 2019
