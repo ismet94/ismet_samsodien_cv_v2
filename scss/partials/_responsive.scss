@@ -27,18 +27,6 @@ and (max-width: 480px) {
   width: 100%;
 }
 
-/* this styles the navigation bar with the text colour, alignment and position */
-nav {
-  background-color: rgba(0, 0, 0, 0.39);
-  color: white;
-  position: fixed;
-  height: 50px;
-  top: 10px;
-  right: 1px;
-  left: 1px;
-  border-radius: 10px;
-}
-
 ul {
   margin-top: 2px;
 }
@@ -51,9 +39,15 @@ li {
   text-align: center;
 }
 
+/* the section is used so that each heading can be split from each other */
+section {
+  width: 100%;
+  /* a linear-gradient effect was used to give a sleek look */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.733), rgba(255, 255, 255, 0.685), rgba(252, 252, 252, 0.205));
+}
+
 /* below is the link colour, decoration and font size */
 a:link {
-  color: white;
   font-size: 10px;
   /* The decoration is added so that the lines disappears under the text */
   text-decoration-style: none;
@@ -63,37 +57,26 @@ a:link {
 
 /* below is the visited colour and font size */
 a:visited {
-  color: rgb(109, 0, 182);
   font-size: 10px;
 }
 
 /* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
 a:hover {
-  color: rgb(180, 180, 180);
   font-size: 10px;
 }
 
 /* below is the active colour, decoration and font size */
 a:active {
-  color: purple;
   font-size: 3px;
 }
 
 
 /* This displays my name and surname and jusitifies the positioning of the text */
-.center {
-  /* Ensures that the text is centered evenly */
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 45%;
-  transform: translate(-40%, -40%);
-  /* Colour and size determined */
-  color: white;
-  font-size: 15px;
-  animation-name: direction;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
+
+.hero-heading {
+  display: block;
+  margin: 20px;
+  font-size: 25px;
 }
 
 @keyframes direction {
@@ -103,7 +86,6 @@ a:active {
 
 /* when hovering over the button the colour ant text would change */
 button:hover {
-  background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
@@ -117,7 +99,6 @@ button:hover {
 
 /* this ensures that the headings for each section is coloured and positioned properly */
 .headers {
-  color: rgb(255, 255, 255);
   text-align: center;
   /* the text transformation was used to uppercase all letters so that it stands out */
   font-size: 30px;
@@ -157,8 +138,10 @@ section {
 
 /* this class links to my social media icons in the home section it only justifies the height and width for each */
 .icons {
+  padding-top: 20px;
+  background-size: contain;
   width: 20%;
-  height: 20%;
+  height: 100%;
 }
 
 /* the table property changes the font size to a more readible content for a mobile device */
@@ -167,22 +150,23 @@ table {
 }
 
 .grid-project {
-  display: block;
-  // width: 90%;
-  // margin: auto;
+  display: grid;
+  width: 90%;
+  margin: auto;
+  padding-left: 5%;
   
-  // /* grid columns and rows size */
-  // grid-template-columns: repeat(1, 1fr);
-  // grid-template-rows: auto;
-  // grid-gap: 5px;
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 5px;
         
-  // grid-template-areas: 
-  //               "apology"
-  //               "tech"
-  //               "outdoor"
-  //               "virtual"
-  //               "carblog"
-  //               "furniture"
+  grid-template-areas: 
+                "apology"
+                "tech"
+                "outdoor"
+                "virtual"
+                "carblog"
+                "furniture"
 }
 
 /* this ensures that the project images are sized correctly */
@@ -201,7 +185,7 @@ table {
 /******* Tablet Device  *******/
 /* Responsive design for a tablet device */
 @media only screen 
-and (min-device-width: 457px) 
+and (min-device-width: 481px) 
 and (max-device-width: 1023px) 
 and (-webkit-min-device-pixel-ratio: 1) {
 

@@ -64,11 +64,13 @@ a:link {
 a:visited {
   color: rgb(109, 0, 182);
   font-size: 15px;
+  text-decoration-style: none;
 }
 
 /* below is the hover colour, decoration and font size. When scrolling over the text would then transition to a bigger font size thus giving it a smooth and elegant feel. */
 a:hover {
   color: rgb(94, 94, 94);
+  
  
   /* the timing and delay is added to smoothen it out */
   transition-duration: 0.3s;
@@ -90,11 +92,13 @@ a:active {
   text-decoration: none;
 }
 
+// Download button hover styling
 button:hover {
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: $black;
   text-align: center;
   text-decoration: none;
+  text-decoration-style: none;
   cursor: pointer;
 }
 

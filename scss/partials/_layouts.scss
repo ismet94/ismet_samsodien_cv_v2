@@ -57,7 +57,7 @@
   background: rgba(0, 0, 0, 0.9);
 }
 #return-to-top:hover i {
-  color: #fff;
+  color: $body;
   top: 5px;
 }
 
@@ -70,7 +70,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   /* Colour and size determined */
-  color: white;
+  color: $body;
   text-shadow: 0 4px 5px black;
   animation-name: direction;
   animation-duration: 2s;
@@ -88,7 +88,7 @@
   margin: 0 auto; 
   letter-spacing: .12em; 
   /* styling for the blinker */
-  border-right: .15em solid rgb(255, 217, 0); 
+  border-right: .15em solid $blinker; 
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
@@ -103,13 +103,13 @@
 /* The blniker effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: rgb(255, 217, 0); }
+  50% { border-color: $blinker; }
 }
 
 
 /* this adds styling to the download button so that it fits the theme */
 .download-btn {
-  color: white;
+  color: $body;
   background-color: rgba(0, 0, 0, 0.596);
   display: block;
   /* border styling selected */
@@ -139,7 +139,7 @@
 
 /* this ensures that the headings for each section is coloured and positioned properly */
 .headers {
-  color: rgb(255, 255, 255);
+  color: $body;
   text-align: center;
   /* the text transformation was used to uppercase all letters so that it stands out */
   text-transform: uppercase;
@@ -236,7 +236,7 @@
 
 .top {
   /* colour and display selected */
-  color: blue;
+  color: $aqua;
   display: block;
   /* text align and spacing */
   text-align: center;
