@@ -185,8 +185,8 @@ table {
 /******* Tablet Device  *******/
 /* Responsive design for a tablet device */
 @media only screen 
-and (min-device-width: 481px) 
-and (max-device-width: 1023px) 
+and (min-width: 481px) 
+and (max-width: 1023px) 
 and (-webkit-min-device-pixel-ratio: 1) {
 
 
@@ -222,6 +222,26 @@ nav {
   border-radius: 10px;
 }
 
+
+.grid-project {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  padding-left: 5%;
+  
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 5px;
+        
+  grid-template-areas: 
+                "apology"
+                "tech"
+                "outdoor"
+                "virtual"
+                "carblog"
+                "furniture"
+}
 
 /* this ensures that each li tag is spaced out evenly and consistant */
 li {
